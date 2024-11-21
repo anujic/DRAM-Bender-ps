@@ -394,5 +394,18 @@ module softmc_top #(parameter tCK = 1500, SIM = "false")
     .hbm1_temp(hbm1_temp)
   );
   
+  design_1_wrapper i_microblaze (
+    .Clk(fab_clk),
+    .M0_AXIS_0_tdata(),
+    .M0_AXIS_0_tlast(),
+    .M0_AXIS_0_tready(),
+    .M0_AXIS_0_tvalid(),
+    .S0_AXIS_0_tdata(),
+    .S0_AXIS_0_tlast(),
+    .S0_AXIS_0_tready(),
+    .S0_AXIS_0_tvalid(),
+    .reset_rtl()
+  ); 
+ 
    
 endmodule

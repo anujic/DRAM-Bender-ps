@@ -1,0 +1,7 @@
+xpm_cdc.sv,systemverilog,xpm,../../../../../../../../../../../usr/pack/vitis-2022.1-zr/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_fifo.sv,systemverilog,xpm,../../../../../../../../../../../usr/pack/vitis-2022.1-zr/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv,
+xpm_memory.sv,systemverilog,xpm,../../../../../../../../../../../usr/pack/vitis-2022.1-zr/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../../../../usr/pack/vitis-2022.1-zr/Vivado/2022.1/data/ip/xpm/xpm_VCOMP.vhd,
+microblaze_v11_0_vh_rfs.vhd,vhdl,microblaze_v11_0_9,../../../ipstatic/hdl/microblaze_v11_0_vh_rfs.vhd,
+microblaze_0.vhd,vhdl,xil_defaultlib,../../../../U50-HBM.gen/sources_1/ip/microblaze_0/sim/microblaze_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

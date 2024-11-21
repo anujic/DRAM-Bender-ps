@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../U50-HBM.gen/sources_1/ip/microblaze_0/sim/microblaze_0.vhd" \
+
+nosort
