@@ -194,10 +194,10 @@ set_property IOSTANDARD  LVCMOS18 [get_ports pcie_rst]          ;# Bank  65 VCCO
 #    FPGA_UART0/1/2_RXD  Input from DBM-01 UART to FPGA
 #    FPGA_UART0/1/2_TXD  Output from FPGA to DBM-01 UART
 #
-#set_property PACKAGE_PIN BF26     [get_ports "FPGA_UART0_RXD"]        ;# Bank  65 VCCO - VCC1V8   - IO_L15N_T2L_N5_AD11N_A03_D165
-#set_property IOSTANDARD  LVCMOS18 [get_ports "FPGA_UART0_RXD"]        ;# Bank  65 VCCO - VCC1V8   - IO_L15N_T2L_N5_AD11N_A03_D165
-#set_property PACKAGE_PIN BE26     [get_ports "FPGA_UART0_TXD"]        ;# Bank  65 VCCO - VCC1V8   - IO_L15P_T2L_N4_AD11P_A02_D1_65
-#set_property IOSTANDARD  LVCMOS18 [get_ports "FPGA_UART0_TXD"]        ;# Bank  65 VCCO - VCC1V8   - IO_L15P_T2L_N4_AD11P_A02_D165
+set_property PACKAGE_PIN BF26     [get_ports uart_msp_0_rxd_i]        ;# Bank  65 VCCO - VCC1V8   - IO_L15N_T2L_N5_AD11N_A03_D165
+set_property IOSTANDARD  LVCMOS18 [get_ports uart_msp_0_rxd_i]        ;# Bank  65 VCCO - VCC1V8   - IO_L15N_T2L_N5_AD11N_A03_D165
+set_property PACKAGE_PIN BE26     [get_ports uart_msp_0_txd_o]        ;# Bank  65 VCCO - VCC1V8   - IO_L15P_T2L_N4_AD11P_A02_D1_65
+set_property IOSTANDARD  LVCMOS18 [get_ports uart_msp_0_txd_o]        ;# Bank  65 VCCO - VCC1V8   - IO_L15P_T2L_N4_AD11P_A02_D165
 #set_property PACKAGE_PIN B15      [get_ports "FPGA_UART1_RXD"]        ;# Bank  68 VCCO - VCC1V8   - IO_L24P_T3U_N10_68
 #set_property IOSTANDARD  LVCMOS18 [get_ports "FPGA_UART1_RXD"]        ;# Bank  68 VCCO - VCC1V8   - IO_L24P_T3U_N10_68
 #set_property PACKAGE_PIN A17      [get_ports "FPGA_UART1_TXD"]        ;# Bank  68 VCCO - VCC1V8   - IO_L23N_T3U_N9_68

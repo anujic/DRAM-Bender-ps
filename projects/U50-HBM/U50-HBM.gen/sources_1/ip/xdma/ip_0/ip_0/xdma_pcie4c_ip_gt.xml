@@ -10,11 +10,11 @@
         <spirit:name>xilinx_elaborateports</spirit:name>
         <spirit:displayName>Elaborate Ports</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:elaborate.ports</spirit:envIdentifier>
-        <spirit:modelName>gtwizard_ultrascale_v1_7_9_gtwizard_ultrascale</spirit:modelName>
+        <spirit:modelName>gtwizard_ultrascale_v1_7_13_gtwizard_ultrascale</spirit:modelName>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9a660188</spirit:value>
+            <spirit:value>9:d0afbf31</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -14460,11 +14460,6 @@
       <spirit:enumeration>20</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_13717074</spirit:name>
-      <spirit:enumeration>-20</spirit:enumeration>
-      <spirit:enumeration>-40</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
       <spirit:name>choice_list_1fad77c0</spirit:name>
       <spirit:enumeration>RXOUTCLKPMA</spirit:enumeration>
       <spirit:enumeration>RXOUTCLKPCS</spirit:enumeration>
@@ -14659,6 +14654,10 @@
       <spirit:enumeration>13</spirit:enumeration>
       <spirit:enumeration>14</spirit:enumeration>
       <spirit:enumeration>15</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_bf3f30a9</spirit:name>
+      <spirit:enumeration>-20</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_e6469819</spirit:name>
@@ -15022,16 +15021,16 @@
       <spirit:enumeration spirit:text="Valid IEEE 802.3 commas only">1</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_pairs_1040277f</spirit:name>
-      <spirit:enumeration spirit:text="AVTT">AVTT</spirit:enumeration>
-      <spirit:enumeration spirit:text="FLOAT">FLOAT</spirit:enumeration>
-      <spirit:enumeration spirit:text="GND">GND</spirit:enumeration>
-      <spirit:enumeration spirit:text="Programmable">PROGRAMMABLE</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
       <spirit:name>choice_pairs_1436b008</spirit:name>
       <spirit:enumeration spirit:text="Multi-lane mode">MULTI</spirit:enumeration>
       <spirit:enumeration spirit:text="Single-lane mode">SINGLE</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_3194ea81</spirit:name>
+      <spirit:enumeration spirit:text="AVTT">AVTT</spirit:enumeration>
+      <spirit:enumeration spirit:text="GND">GND</spirit:enumeration>
+      <spirit:enumeration spirit:text="FLOAT">FLOAT</spirit:enumeration>
+      <spirit:enumeration spirit:text="Programmable">PROGRAMMABLE</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_pairs_40d02874</spirit:name>
@@ -15487,7 +15486,7 @@
       <spirit:name>RX_JTOL_LF_SLOPE</spirit:name>
       <spirit:displayName>Mask low frequency slope (dB/decade)</spirit:displayName>
       <spirit:description>Refer to the product guide for guidelines on setting jitter tolerance mask low frequency slope.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.RX_JTOL_LF_SLOPE" spirit:choiceRef="choice_list_13717074" spirit:order="44">-20</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.RX_JTOL_LF_SLOPE" spirit:choiceRef="choice_list_bf3f30a9" spirit:order="44">-20</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>RX_OUTCLK_SOURCE</spirit:name>
@@ -15507,7 +15506,7 @@
       <spirit:name>RX_TERMINATION</spirit:name>
       <spirit:displayName>Termination</spirit:displayName>
       <spirit:description>Select the receiver termination</spirit:description>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.RX_TERMINATION" spirit:choiceRef="choice_pairs_1040277f" spirit:order="48">PROGRAMMABLE</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.RX_TERMINATION" spirit:choiceRef="choice_pairs_3194ea81" spirit:order="48">PROGRAMMABLE</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>RX_TERMINATION_PROG_VALUE</spirit:name>
@@ -22779,7 +22778,7 @@ _in drpaddr_in drpen_in drprst_in drprdy_out drpdi_in drpdo_out rxcdrhold_in rxd
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>UltraScale FPGAs Transceivers Wizard</xilinx:displayName>
-      <xilinx:coreRevision>9</xilinx:coreRevision>
+      <xilinx:coreRevision>13</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.CHANNEL_ENABLE" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.DISABLE_LOC_XDC" xilinx:valueSource="propagated"/>
@@ -22827,11 +22826,11 @@ _in drpaddr_in drpen_in drprst_in drprdy_out drpdi_in drpdo_out rxcdrhold_in rxd
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="86239c52"/>
+      <xilinx:xilinxVersion>2022.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b66a0b8a"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="240e62dd"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="81cdd016"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="22678636"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="a61078e5"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

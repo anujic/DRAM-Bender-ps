@@ -17,7 +17,11 @@ module softmc_top #(parameter tCK = 1500, SIM = "false")
   input   [7:0]    pci_exp_rxp,
   input   [7:0]    pci_exp_rxn,
   
-  output icc
+  output icc,
+  
+  //UART
+  input uart_msp_0_rxd_i,
+  output uart_msp_0_txd_o
 );
   
   // clock signals
@@ -396,15 +400,17 @@ module softmc_top #(parameter tCK = 1500, SIM = "false")
   
   design_1_wrapper i_microblaze (
     .Clk(fab_clk),
-    .M0_AXIS_0_tdata(),
-    .M0_AXIS_0_tlast(),
-    .M0_AXIS_0_tready(),
-    .M0_AXIS_0_tvalid(),
-    .S0_AXIS_0_tdata(),
-    .S0_AXIS_0_tlast(),
-    .S0_AXIS_0_tready(),
-    .S0_AXIS_0_tvalid(),
-    .reset_rtl()
+    .M0_AXIS_0_tdata(xdma_c2h_tdata_0 ),
+    .M0_AXIS_0_tlast(xdma_c2h_tlast_0 ),
+    .M0_AXIS_0_tready(xdma_c2h_tready_0 ),
+    .M0_AXIS_0_tvalid(xdma_c2h_tvalid_0 ),
+    .S0_AXIS_0_tdata(s_axis_c2h_tdata_0 ),
+    .S0_AXIS_0_tlast(s_axis_c2h_tlast_0 ),
+    .S0_AXIS_0_tready(s_axis_c2h_tready_0 ),
+    .S0_AXIS_0_tvalid(s_axis_c2h_tvalid_0 ),
+    .reset_rtl(user_rst ),
+    .uart_msp_0_rxd(uart_msp_0_rxd_i ),
+    .uart_msp_0_txd(uart_msp_0_txd_o)
   ); 
  
    

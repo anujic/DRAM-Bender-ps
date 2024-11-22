@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2023 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2024 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -45,17 +45,15 @@
 -- PART OF THIS FILE AT ALL TIMES.
 -- 
 -- DO NOT MODIFY THIS FILE.
-
 -- IP VLNV: xilinx.com:ip:c_counter_binary:12.0
--- IP Revision: 14
-
+-- IP Revision: 15
 -- The following code must appear in the VHDL architecture header.
 
 ------------- Begin Cut here for COMPONENT Declaration ------ COMP_TAG
 COMPONENT c_counter_binary_0
   PORT (
     CLK : IN STD_LOGIC;
-    Q : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+    Q : OUT STD_LOGIC_VECTOR(15 DOWNTO 0) 
   );
 END COMPONENT;
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------
@@ -74,4 +72,6 @@ your_instance_name : c_counter_binary_0
 -- You must compile the wrapper file c_counter_binary_0.vhd when simulating
 -- the core, c_counter_binary_0. When compiling the wrapper file, be sure to
 -- reference the VHDL simulation library.
+
+
 
